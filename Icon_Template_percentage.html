@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Sky's "Home" themed icons</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        <style>
+            .row{
+                margin-top:40px;
+            }
+            .left-column{
+                float:left;
+                width:30%;
+                margin-left:30px;
+            }
+            .center-column{
+                width:30%;
+                margin:auto;
+            }
+            .right-column{
+                float:right;
+                width:30%;
+                margin:auto;
+            }
+            .image-container{
+                display: table-cell;
+                vertical-align: middle;
+                margin: auto;
+            }
+        </style>
+        <script>
+            var sound1 = new buzz.sound("sound/glasses clinking.mp3");
+            var sound2 = new buzz.sound("sound/brushing teeth.mp3");
+            var sound3 = new buzz.sound("sound/cleaning agencies_1.mp3");
+            var sound4 = new buzz.sound("sound/pillows.mp3");
+            var sound5 = new buzz.sound("sound/game starts.mp3");
+            var sound6 = new buzz.sound("sound/electronic start.mp3");
+            var sound7 = new buzz.sound("sound/pots clinking.mp3");
+            var sound8 = new buzz.sound("sound/pencil writings.mp3");
+            var sound9 = new buzz.sound("sound/underwear folds.mp3");
+
+            window.onload = function() {
+                document.getElementById('icon1').addEventListener('mouseover', function () {sound1.play();});
+                document.getElementById('icon2').addEventListener('mouseover', function () {sound2.play();});
+                document.getElementById('icon3').addEventListener('mouseover', function () {sound3.play();});
+                document.getElementById('icon4').addEventListener('mouseover', function () {sound4.play();});
+                document.getElementById('icon5').addEventListener('mouseover', function () {sound5.play();});
+                document.getElementById('icon6').addEventListener('mouseover', function () {sound6.play();});
+                document.getElementById('icon7').addEventListener('mouseover', function () {sound7.play();});
+                document.getElementById('icon8').addEventListener('mouseover', function () {sound8.play();});
+                document.getElementById('icon9').addEventListener('mouseover', function () {sound9.play();});
+            }
+        </script>
+    </head>
+
+    <body bgcolor="orange">
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img id="icon1" src="img/artboard (8).png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="icon3" src="img/artboard (6).png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="icon2" src="img/artboard (7).png" height="400" width="400"/></div></div>
+        </div>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img id="icon4" src="img/artboard (9).png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="icon6" src="img/artboard (4).png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="icon5"src="img/artboard (2).png" height="400" width="400"/></div></div>
+        </div>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img id="icon7" src="img/artboard (1).png" height="400" width="400"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="icon9" src="img/artboard (5).png" height="400" width="400"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="icon8" src="img/artboard (3).png" height="400" width="400"/></div></div>
+        </div>
+
+    </body>
+    
+</html>
